@@ -18,7 +18,7 @@ class MCPAcademicServer:
     """
     Giả lập MCP Server tuân thủ chuẩn giao thức Model Context Protocol
     """
-    def __init__(self, server_name: str = "vinuni-academic-mcp-server"):
+    def __init__(self, server_name: str = "vinmec-academic-mcp-server"):
         self.server_name = server_name
         self.version = "2026.1.0"
         
@@ -39,7 +39,15 @@ class MCPAcademicServer:
         # 3. Đóng gói phản hồi và trả về Dict theo đúng chuẩn giao thức MCP JSON-RPC 2.0:
         #    - Các trường bắt buộc: "jsonrpc": "2.0", "server": self.server_name, "tool": tool_name, "result": content
         # --------------------------------------------------------------------------
-        return {}
+        json_str = dispatch_tool_call(tool_name, arguments)
+        content = json.loads(json_str)
+
+        return {
+            "jsonrpc": "2.0", 
+            "server": self.server_name, 
+            "tool": tool_name, 
+            "result": content
+        }
 
 
 if __name__ == "__main__":
