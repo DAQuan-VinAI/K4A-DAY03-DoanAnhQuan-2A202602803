@@ -30,8 +30,8 @@ Dán 1 đoạn trích xuất log tiêu biểu từ file `docs/trace_waterfall.js
     "query": "Chào bạn, bạn có thể giới thiệu quy chế học vụ cơ bản của Đại học VinUni không?",
     "action_type": "FINAL_ANSWER",
     "thought": "OpenAI phản hồi trực tiếp bằng văn bản (không cần gọi công cụ).",
-    "output": "Chào bạn! Quy chế học vụ của Đại học VinUni bao gồm nhiều quy định cơ bản về việc học tập của sinh viên, bao gồm:\n\n1. **Đăng ký và tham gia khóa học**: Sinh viên cần đăng ký các môn học trong thời gian quy định và phải tham gia đầy đủ các buổi học.\n\n2. **Điểm số và đánh giá**: Sinh viên sẽ được đánh giá qua các bài kiểm tra, bài tập lớn, và điểm cuối kỳ. Điểm số thường được tính theo thang điểm 10 và có quy định về cách tính điểm tổng kết.\n\n3. **Vắng mặt và bảo lưu**: Có quy định về việc xin phép vắng mặt trong các buổi học và quy trình để bảo lưu kết quả học tập.\n\n4. **Khen thưởng và kỷ luật**: Đại học VinUni có các quy định về việc khen thưởng sinh viên xuất sắc và xử lý các hành vi vi phạm quy chế học vụ.\n\n5. **Hỗ trợ học vụ**: Sinh viên có quyền nhận hỗ trợ từ các cố vấn học tập để giải quyết các vấn đề liên quan đến học tập và thời gian biểu.\n\nBạn cần thông tin chi tiết hơn về bất kỳ điểm nào trong quy chế trên không?",
-    "latency_ms": 3866.57
+    "output": "Quy chế học vụ cơ bản của Đại học VinUni bao gồm các nội dung chính như sau:\n\n1. **Đăng ký môn học**: Sinh viên có trách nhiệm đăng ký môn học theo đúng thời gian quy định, đảm bảo đủ tín chỉ cần thiết cho từng kỳ học.\n\n2. **Điểm số và phân loại học lực**: Điểm số được ghi nhận theo thang điểm 10, trong đó điểm qua môn học, điểm trung bình tích lũy (GPA) là cơ sở để đánh giá học lực của sinh viên.\n\n3. **Tham gia lớp học**: Sinh viên cần tuân thủ quy định về tỷ lệ tham gia lớp học, không vượt quá số buổi vắng mặt cho phép trong từng môn học.\n\n4. **Kiểm tra và thi cử**: Thực hiện đúng quy trình kiểm tra giữa kỳ và cuối kỳ, bao gồm việc nộp bài đúng hạn và tham gia thi cử theo lịch.\n\n5. **Khen thưởng và kỷ luật**: Có quy định về việc khen thưởng đối với sinh viên có thành tích xuất sắc và các hình thức kỷ luật đối với những hành vi vi phạm quy tắc học vụ.\n\n6. **Chuyển trường và nghỉ học**: Quy định về thủ tục và điều kiện chuyển trường hoặc xin nghỉ học một cách hợp pháp.\n\nĐể có thông tin chi tiết và cập nhật nhất về quy chế học vụ, sinh viên nên tham khảo tại trang web chính thức của Đại học VinUni hoặc liên hệ trực tiếp với phòng học vụ.",
+    "latency_ms": 4341.0
   },
   {
     "step": 1,
@@ -53,15 +53,15 @@ Dán 1 đoạn trích xuất log tiêu biểu từ file `docs/trace_waterfall.js
         "advisor": "PGS.TS Nguyễn Văn A"
       }
     },
-    "latency_ms": 2152.49
+    "latency_ms": 1071.93
   },
   {
     "step": 2,
     "query": "Hãy tra cứu thông tin học vụ của sinh viên SV2026001.",
     "action_type": "FINAL_ANSWER",
     "thought": "OpenAI phản hồi trực tiếp bằng văn bản (không cần gọi công cụ).",
-    "output": "Thông tin học vụ của sinh viên SV2026001 như sau:\n\n- **Họ và tên:** Nguyễn Văn An\n- **Lớp:** AI-K4\n- **Điểm trung bình (GPA):** 3.85\n- **Email:** an.nv@vinuni.edu.vn\n- **Trạng thái học tập:** Đang học\n- **Cố vấn học tập:** PGS.TS Nguyễn Văn A\n\nNếu bạn cần thêm thông tin nào khác, hãy cho tôi biết!",
-    "latency_ms": 1312.8
+    "output": "Thông tin học vụ của sinh viên SV2026001 như sau:\n\n- **Họ và tên:** Nguyễn Văn An\n- **Lớp:** AI-K4\n- **Điểm GPA:** 3.85\n- **Email:** an.nv@vinuni.edu.vn\n- **Trạng thái:** Đang học\n- **Cố vấn học tập:** PGS.TS Nguyễn Văn A",
+    "latency_ms": 1564.45
   },
   {
     "step": 1,
@@ -83,7 +83,7 @@ Dán 1 đoạn trích xuất log tiêu biểu từ file `docs/trace_waterfall.js
         "advisor": "PGS.TS Nguyễn Văn A"
       }
     },
-    "latency_ms": 1283.74
+    "latency_ms": 1197.66
   },
   {
     "step": 2,
@@ -105,7 +105,7 @@ Dán 1 đoạn trích xuất log tiêu biểu từ file `docs/trace_waterfall.js
         "advisor": "TS. Lê Thị B"
       }
     },
-    "latency_ms": 1007.67
+    "latency_ms": 951.59
   },
   {
     "step": 3,
@@ -114,34 +114,62 @@ Dán 1 đoạn trích xuất log tiêu biểu từ file `docs/trace_waterfall.js
     "tool_name": "schedule_appointment",
     "arguments": {
       "student_id": "SV2026001",
-      "datetime_str": "01/10/2026 06:00",
+      "datetime_str": "01/10/2026",
       "advisor_name": "PGS.TS Nguyễn Văn A"
     },
     "observation": {
       "status": "SUCCESS",
       "booking_id": "BK-SV2026001-99",
       "student_id": "SV2026001",
-      "datetime": "01/10/2026 06:00",
+      "datetime": "01/10/2026",
       "advisor": "PGS.TS Nguyễn Văn A",
-      "message": "Đặt lịch thành công cho sinh viên SV2026001 với PGS.TS Nguyễn Văn A vào lúc 01/10/2026 06:00."
+      "message": "Đặt lịch thành công cho sinh viên SV2026001 với PGS.TS Nguyễn Văn A vào lúc 01/10/2026."
     },
-    "latency_ms": 1324.52
+    "latency_ms": 1264.1
   },
   {
     "step": 4,
     "query": "tra cứu thông tin SV2026001, sau đó tra cứu thông tin SV2026002, sau đó đặt lịch cho SV2026001 6:00 ngày 1/10/2026",
     "action_type": "FINAL_ANSWER",
     "thought": "OpenAI phản hồi trực tiếp bằng văn bản (không cần gọi công cụ).",
-    "output": "Thông tin đã tra cứu:\n\n1. **Sinh viên SV2026001:**\n   - Họ và tên: Nguyễn Văn An\n   - Lớp: AI-K4\n   - GPA: 3.85\n   - Email: an.nv@vinuni.edu.vn\n   - Trạng thái: Đang học\n   - Cố vấn học tập: PGS.TS Nguyễn Văn A\n\n2. **Sinh viên SV2026002:**\n   - Họ và tên: Trần Thị Bình\n   - Lớp: AI-K4\n   - GPA: 3.6\n   - Email: binh.tt@vinuni.edu.vn\n   - Trạng thái: Đang học\n   - Cố vấn học tập: TS. Lê Thị B\n\n3. **Lịch hẹn:**\n   - Đặt lịch thành công cho sinh viên SV2026001 với PGS.TS Nguyễn Văn A vào lúc **01/10/2026 06:00**. Mã đặt lịch: BK-SV2026001-99.\n\nNếu bạn cần thêm thông tin hoặc hỗ trợ nào khác, hãy cho tôi biết!",
-    "latency_ms": 2048.58
+    "output": "Dưới đây là thông tin đã tra cứu và lịch hẹn đã đặt:\n\n### Thông tin sinh viên SV2026001:\n- **Họ và tên**: Nguyễn Văn An\n- **Lớp**: AI-K4\n- **GPA**: 3.85\n- **Email**: an.nv@vinuni.edu.vn\n- **Tình trạng**: Đang học\n- **Cố vấn học tập**: PGS.TS Nguyễn Văn A\n\n### Thông tin sinh viên SV2026002:\n- **Họ và tên**: Trần Thị Bình\n- **Lớp**: AI-K4\n- **GPA**: 3.6\n- **Email**: binh.tt@vinuni.edu.vn\n- **Tình trạng**: Đang học\n- **Cố vấn học tập**: TS. Lê Thị B\n\n### Lịch hẹn:\n- **Sinh viên**: SV2026001\n- **Thời gian**: 01/10/2026 lúc 6:00\n- **Cố vấn**: PGS.TS Nguyễn Văn A\n- **Trạng thái**: Đặt lịch thành công (Booking ID: BK-SV2026001-99)\n\nNếu bạn cần thêm thông tin hay yêu cầu gì khác, hãy cho tôi biết!",
+    "latency_ms": 3317.3
   },
   {
     "step": 1,
     "query": "Thay đổi mail sinh viên SV2026001 mail thành 123@gmail.com",
+    "action_type": "TOOL_REJECTED_BY_HITL",
+    "tool_name": "update_student_profile",
+    "arguments": {
+      "student_id": "SV2026001",
+      "field": "email",
+      "value": "123@gmail.com"
+    },
+    "latency_ms": 1894.15
+  },
+  {
+    "step": 1,
+    "query": "Thay đổi mail sinh viên SV2026001 mail thành 123@gmail.com",
+    "action_type": "TOOL_EXECUTION",
+    "tool_name": "update_student_profile",
+    "arguments": {
+      "student_id": "SV2026001",
+      "field": "email",
+      "value": "123@gmail.com"
+    },
+    "observation": {
+      "status": "REJECTED",
+      "message": "Thao tác bị hủy bởi người dùng qua HITL."
+    },
+    "latency_ms": 1894.15
+  },
+  {
+    "step": 2,
+    "query": "Thay đổi mail sinh viên SV2026001 mail thành 123@gmail.com",
     "action_type": "FINAL_ANSWER",
     "thought": "OpenAI phản hồi trực tiếp bằng văn bản (không cần gọi công cụ).",
-    "output": "Để cập nhật địa chỉ email cho sinh viên SV2026001 thành 123@gmail.com, tôi cần tiến hành hành động này. Tuy nhiên, việc thay đổi thông tin hồ sơ sinh viên là hành động nhạy cảm và cần phê duyệt.\n\nVui lòng xác nhận bạn muốn thực hiện thay đổi này không?",
-    "latency_ms": 1155.5
+    "output": "Yêu cầu thay đổi email của sinh viên SV2026001 đã bị từ chối do thao tác này cần sự phê duyệt từ người dùng qua quy trình HITL (Human In The Loop). Vui lòng xác nhận liệu bạn có muốn tiếp tục thực hiện thay đổi này hay không?",
+    "latency_ms": 1325.34
   },
   {
     "step": 1,
@@ -155,15 +183,15 @@ Dán 1 đoạn trích xuất log tiêu biểu từ file `docs/trace_waterfall.js
       "status": "NOT_FOUND",
       "message": "Không tìm thấy dữ liệu sinh viên có mã 'SV20260705'"
     },
-    "latency_ms": 984.57
+    "latency_ms": 1026.45
   },
   {
     "step": 2,
     "query": "Hãy tra cứu thông tin học vụ của sinh viên SV20260705.",
     "action_type": "FINAL_ANSWER",
     "thought": "OpenAI phản hồi trực tiếp bằng văn bản (không cần gọi công cụ).",
-    "output": "Không tìm thấy dữ liệu học vụ của sinh viên với mã SV20260705. Có thể mã sinh viên này không chính xác hoặc chưa được đăng ký trong hệ thống. Bạn có thể kiểm tra lại mã sinh viên của mình hoặc cung cấp một mã khác để tôi tra cứu thêm.",
-    "latency_ms": 1069.49
+    "output": "Không tìm thấy dữ liệu cho sinh viên với mã số \"SV20260705\". Bạn có thể kiểm tra lại mã số sinh viên hoặc cung cấp cho tôi mã số khác để tôi có thể giúp bạn tra cứu thông tin học vụ.",
+    "latency_ms": 1053.7
   }
 ]
 ```
