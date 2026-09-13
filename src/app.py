@@ -104,6 +104,29 @@ def run_react_agent(user_query: str, provider, mcp_server: MCPAcademicServer) ->
             arguments = llm_response.get("arguments", {})
             
             print(f"🛠️ [Action Proposed]: {tool_name}({arguments})")
+
+            # 🛑 [HITL CHECK]: Nếu là tool nhạy cảm, yêu cầu con người xác nhận trước khi thực thi
+            if tool_name == "update_student_profile":
+                print(f"\n⚠️ [SECURITY ALERT - HITL REQUIRED]: Agent muốn thực hiện thao tác nhạy cảm!")
+                print(f"📌 Chi tiết thay đổi: Cập nhật trường '{arguments.get('field')}' thành '{arguments.get('value')}' cho sinh viên {arguments.get('student_id')}.")
+                
+                confirm = input("❓ Bạn có đồng ý phê duyệt thao tác này không? (y/n): ").strip().lower()
+                if confirm != 'y':
+                    print("❌ [HITL REJECTED]: Người dùng đã từ chối thực thi thao tác!")
+                    final_answer = "Thao tác cập nhật hồ sơ đã bị hủy bởi người dùng (Human-in-the-Loop)."
+                    
+                    # Ghi nhận log từ chối
+                    trace_logs.append({
+                        "step": step,
+                        "query": user_query,
+                        "action_type": "TOOL_REJECTED_BY_HITL",
+                        "tool_name": tool_name,
+                        "arguments": arguments,
+                        "latency_ms": latency_ms
+                    })
+                    break
+                else:
+                    print("✅ [HITL APPROVED]: Đã được phê duyệt. Tiến hành gọi MCP Server...")
             
             # Thực thi Tool qua MCP Server
             mcp_result = mcp_server.call_tool(tool_name, arguments)

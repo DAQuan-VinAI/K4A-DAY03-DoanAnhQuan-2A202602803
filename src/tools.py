@@ -49,7 +49,7 @@ TOOLS_SCHEMA = [
             "required": ["student_id", "datetime_str"]
         }
     },
-    
+
     {
         "name": "schedule_appointment",
         "description": "Đặt lịch hẹn tư vấn học vụ với Cố vấn học tập VinUni.",
@@ -70,6 +70,30 @@ TOOLS_SCHEMA = [
                 },
             },
             "required": ["student_id", "datetime_str"]
+        }
+    },
+
+        
+    {
+        "name": "update_student_profile",
+        "description": "[HÀNH ĐỘNG NHẠY CẢM - CẦN HITL PHÊ DUYỆT Cập nhật thông tin hồ sơ sinh viên]",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "student_id": {
+                    "type": "string",
+                    "description": "Mã sinh viên cần tra cứu (ví dụ: 'SV2026001')"
+                },
+                "field": {
+                    "type": "string",
+                    "description": "Loại thông tin cần thay đổi (ví dụ: 'email', 'grade')"
+                },
+                "value": {
+                    "type": "string",
+                    "description": "Giá trị mới"
+                },
+            },
+            "required": ["student_id", "field", "value"]
         }
     }
 ]
@@ -125,11 +149,29 @@ def execute_schedule_appointment(student_id: str, datetime_str: str, advisor_nam
         "message": f"Đặt lịch thành công cho sinh viên {student_id} với {advisor_name} vào lúc {datetime_str}."
     }, ensure_ascii=False)
 
+def execute_update_student_profile(student_id: str, field: str, value: str) -> str:
+    student_id = student_id.strip().upper()
+    if student_id in MOCK_DATABASE:
+        MOCK_DATABASE[student_id][field] = value
+        return json.dumps({
+            "status": "SUCCESS",
+            "student_id": student_id,
+            "field": field,
+            "value": value,
+            "message": f"Đã cập nhật thành công '{field}' thành '{value}'"
+        }, ensure_ascii=False)
+    else:
+        return json.dumps({
+            "status": "NOT_FOUND",
+            "message": f"Không tìm thấy dữ liệu sinh viên có mã '{student_id}'"
+        }, ensure_ascii=False)
+    
 
 # Router gọi tool thực tế
 TOOL_ROUTER = {
     "academic_query": execute_academic_query,
-    "schedule_appointment": execute_schedule_appointment
+    "schedule_appointment": execute_schedule_appointment,
+    "update_student_profile": execute_update_student_profile
 }
 
 def dispatch_tool_call(tool_name: str, arguments: Dict[str, Any]) -> str:

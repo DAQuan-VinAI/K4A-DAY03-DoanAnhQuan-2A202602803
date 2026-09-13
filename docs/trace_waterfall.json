@@ -4,8 +4,8 @@
     "query": "Chào bạn, bạn có thể giới thiệu quy chế học vụ cơ bản của Đại học VinUni không?",
     "action_type": "FINAL_ANSWER",
     "thought": "OpenAI phản hồi trực tiếp bằng văn bản (không cần gọi công cụ).",
-    "output": "Quy chế học vụ cơ bản của Đại học VinUni bao gồm một số nội dung chính như sau:\n\n1. **Đăng ký học và kiểm tra**: Sinh viên cần tuân thủ quy trình đăng ký môn học cũng như thông báo kiểm tra để đảm bảo quyền lợi trong học tập.\n\n2. **Điều kiện xét học bổng**: Các tiêu chí rõ ràng và công bằng để xét học bổng cho sinh viên cần được xác định, bao gồm thành tích học tập, tham gia hoạt động ngoại khóa.\n\n3. **Quy định điểm số**: Điểm số của sinh viên được tính theo một hệ thống cụ thể, thường là thang điểm 10 hoặc 4. Cần có sự minh bạch trong cách thức chấm điểm.\n\n4. **Chấm dứt quyền lợi học tập**: Các trường hợp có thể dẫn đến việc chấm dứt quyền lợi học tập như vi phạm quy chế, không đạt yêu cầu học lực.\n\n5. **Thời gian đào tạo**: Thời gian tối đa và tối thiểu để hoàn thành chương trình học cũng như các điều kiện chuyển trường.\n\n6. **Xét tốt nghiệp**: Quy định về điều kiện tốt nghiệp, bao gồm yêu cầu hoàn thành số tín chỉ và các khóa học bắt buộc.\n\nLưu ý rằng đây là những nội dung cơ bản. Để có thông tin chi tiết và chính xác, các bạn nên tham khảo trực tiếp quy chế được công bố bởi nhà trường hoặc trang web chính thức của VinUni.",
-    "latency_ms": 5144.69
+    "output": "Quy chế học vụ của Đại học VinUni được xây dựng nhằm đảm bảo chất lượng giáo dục và quyền lợi cho sinh viên. Dưới đây là một số điểm cơ bản trong quy chế học vụ:\n\n1. **Điều kiện nhập học**: Sinh viên cần đáp ứng các yêu cầu về hồ sơ, thủ tục và các tiêu chí tuyển sinh của chương trình học.\n\n2. **Chương trình học**: Sinh viên phải hoàn thành đầy đủ các môn học theo chương trình đào tạo, bao gồm cả các môn yêu cầu và tự chọn.\n\n3. **Điểm số và đánh giá**: Điểm số được tính dựa trên các bài kiểm tra, đề thi, và các hình thức đánh giá khác. Có quy định về điểm rèn luyện, điểm qua môn và điểm tốt nghiệp.\n\n4. **Học phí và các khoản phí khác**: Sinh viên cần hiểu rõ về quy định về học phí, thời hạn và các hình thức thanh toán.\n\n5. **Quy định về vắng mặt và tham gia lớp học**: Có các quy định cụ thể về việc xin phép vắng mặt, trách nhiệm tham gia lớp học và các hình thức học tập trực tuyến.\n\n6. **Khen thưởng và kỷ luật**: Quy định về các hình thức khen thưởng cho sinh viên có thành tích xuất sắc và các hình thức xử lý kỷ luật đối với hành vi vi phạm.\n\n7. **Thủ tục xét tốt nghiệp**: Sinh viên cần tuân thủ các thủ tục và điều kiện để được xét tốt nghiệp.\n\nNếu bạn cần thông tin chi tiết hơn về một khía cạnh cụ thể nào trong quy chế học vụ, hãy cho tôi biết!",
+    "latency_ms": 5773.38
   },
   {
     "step": 1,
@@ -27,7 +27,7 @@
         "advisor": "PGS.TS Nguyễn Văn A"
       }
     },
-    "latency_ms": 1278.86
+    "latency_ms": 1265.68
   },
   {
     "step": 2,
@@ -35,33 +35,6 @@
     "action_type": "FINAL_ANSWER",
     "thought": "Tổng hợp kết quả từ MCP Server thành công.",
     "output": "Kết quả tra cứu cho sinh viên SV2026001 (Nguyễn Văn An): Lớp AI-K4, GPA: 3.85, Email: an.nv@vinuni.edu.vn, Trạng thái: Đang học, Cố vấn: PGS.TS Nguyễn Văn A.",
-    "latency_ms": 10.0
-  },
-  {
-    "step": 1,
-    "query": "Đặt lịch hẹn tư vấn cho SV2026002 vào 8:00 ngày 20/11/2026",
-    "action_type": "TOOL_EXECUTION",
-    "tool_name": "schedule_appointment",
-    "arguments": {
-      "student_id": "SV2026002",
-      "datetime_str": "20/11/2026 08:00"
-    },
-    "observation": {
-      "status": "SUCCESS",
-      "booking_id": "BK-SV2026002-99",
-      "student_id": "SV2026002",
-      "datetime": "20/11/2026 08:00",
-      "advisor": "PGS.TS Nguyễn Văn A",
-      "message": "Đặt lịch thành công cho sinh viên SV2026002 với PGS.TS Nguyễn Văn A vào lúc 20/11/2026 08:00."
-    },
-    "latency_ms": 1625.03
-  },
-  {
-    "step": 2,
-    "query": "Đặt lịch hẹn tư vấn cho SV2026002 vào 8:00 ngày 20/11/2026",
-    "action_type": "FINAL_ANSWER",
-    "thought": "Tổng hợp kết quả từ MCP Server thành công.",
-    "output": "Đặt lịch thành công cho sinh viên SV2026002 với PGS.TS Nguyễn Văn A vào lúc 20/11/2026 08:00.",
     "latency_ms": 10.0
   },
   {
@@ -84,7 +57,7 @@
         "advisor": "TS. Lê Thị B"
       }
     },
-    "latency_ms": 1367.14
+    "latency_ms": 1373.98
   },
   {
     "step": 2,
@@ -93,6 +66,18 @@
     "thought": "Tổng hợp kết quả từ MCP Server thành công.",
     "output": "Kết quả tra cứu cho sinh viên SV2026002 (Trần Thị Bình): Lớp AI-K4, GPA: 3.6, Email: binh.tt@vinuni.edu.vn, Trạng thái: Đang học, Cố vấn: TS. Lê Thị B.",
     "latency_ms": 10.0
+  },
+  {
+    "step": 1,
+    "query": "Thay đổi mail sinh viên SV2026001 mail thành 123@gmail.com",
+    "action_type": "TOOL_REJECTED_BY_HITL",
+    "tool_name": "update_student_profile",
+    "arguments": {
+      "student_id": "SV2026001",
+      "field": "email",
+      "value": "123@gmail.com"
+    },
+    "latency_ms": 1989.32
   },
   {
     "step": 1,
@@ -106,7 +91,7 @@
       "status": "NOT_FOUND",
       "message": "Không tìm thấy dữ liệu sinh viên có mã 'SV20260705'"
     },
-    "latency_ms": 1115.79
+    "latency_ms": 1135.29
   },
   {
     "step": 2,
