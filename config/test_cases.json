@@ -16,8 +16,8 @@
   {
     "id": "TC03",
     "type": "multi_step_reasoning",
-    "question": "Hãy tra cứu thông tin học vụ của sinh viên SV2026002 và đặt lịch hẹn tư vấn vào 9:00 ngày 19/10/2026",
-    "expected_behavior": "Agent thực hiện chuỗi suy luận ReAct: Tra cứu cố vấn học tập của sinh viên trước, sau đó tiến hành đặt lịch hẹn.",
+    "question": "tra cứu thông tin SV2026001, sau đó tra cứu thông tin SV2026002, sau đó đặt lịch cho SV2026001 6:00 ngày 1/10/2026",
+    "expected_behavior": "Agent thực hiện chuỗi suy luận ReAct: Tra cứu sinh viên SV2026001 trước, sau đó ra cứu sinh viên SV2026001 trước. Cuối cùng tiến hành đặt lịch cho SV2026001 6:00 ngày 1/10/2026.",
     "complexity": "High"
   },
   {
